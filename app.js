@@ -8,16 +8,10 @@ const express = require('express');
 const port = 3000;
 const app = express();
 
-const ricetta = require('./data/posts.js');
+
 
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}}`);
 });
 
-// app.get("/", (req, res) => {
-//     res.send("Ciao");
-// });
-
-// app.get('/bacheca', (req, res) => {
-//     res.json(ricetta)
-// });
+use
