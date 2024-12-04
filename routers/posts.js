@@ -73,6 +73,11 @@ router.put('/:id', (req, res) => {
 
 });
 
+// UPDATE - PATCH: /posts/1, /posts/2 ...
+router.patch('/:id', (req, res) => {
+    res.send('Modifica parziale dei post ' + req.params.id);
+});
+
 //const postsRouter = router;
 //module.exports = { postsRouter, posts } // multiple export
 module.exports = router;
