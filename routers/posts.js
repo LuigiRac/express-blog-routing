@@ -75,8 +75,15 @@ router.put('/:id', (req, res) => {
 
 // UPDATE - PATCH: /posts/1, /posts/2 ...
 router.patch('/:id', (req, res) => {
-    res.send('Modifica parziale dei post ' + req.params.id);
+    res.send('Modifica parziale dei posts ' + req.params.id);
 });
+
+
+// DELETE - DELETE /posts/1
+router.delete('/:id', (req, res) => {
+    res.send('Eliminazione dei posts ' + req.params.id);
+});
+
 
 //const postsRouter = router;
 //module.exports = { postsRouter, posts } // multiple export
