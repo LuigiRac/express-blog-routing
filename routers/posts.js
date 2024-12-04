@@ -58,7 +58,10 @@ router.get('/:id', (req, res) => {
     res.send("Post non trovato");
 });
 
-
+// CREATE - STORE: /posts/
+// router.post('/posts', (req, res) => {
+//     res.send('Creazione nuovo post');
+// });
 
 
 //const postsRouter = router;
