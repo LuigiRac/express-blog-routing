@@ -59,10 +59,19 @@ router.get('/:id', (req, res) => {
 });
 
 // CREATE - STORE: /posts/
-// router.post('/posts', (req, res) => {
-//     res.send('Creazione nuovo post');
-// });
+router.post('/', (req, res) => {
+    res.send('Creazione nuovo post');
+});
 
+// UPDATE - PUT: /posts/1, /posts/2 ...
+router.put('/:id', (req, res) => {
+    const id = parseInt(req.params.id);
+    const post = posts.find((post) => {
+        return post.id == id;
+    });
+    res.send('Modifica integrale dei post ' + req.params.id);
+
+});
 
 //const postsRouter = router;
 //module.exports = { postsRouter, posts } // multiple export
